@@ -10,7 +10,15 @@ npm install
 yarn
 ```
 
-## Step 2: Start your Application
+## Step 2: Install pod
+
+```bash
+cd ios
+pod install
+cd ..
+```
+
+## Step 3: Start your Application
 
 ### For Android
 
