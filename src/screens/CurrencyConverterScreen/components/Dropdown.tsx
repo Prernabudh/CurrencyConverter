@@ -106,7 +106,9 @@ const Dropdown: React.FC<DropdownProps> = ({
             <Text style={styles.itemText}>{selectedItem?.value}</Text>
           </View>
         ) : (
-          <Text>{selectedItem || placeholder || 'Select an item'}</Text>
+          <Text style={styles.itemText}>
+            {selectedItem || placeholder || 'Select an item'}
+          </Text>
         )}
         <Image source={ArrowDown} style={styles.downArrow} />
       </TouchableOpacity>
@@ -140,12 +142,13 @@ const styles = StyleSheet.create({
   dropdown: {
     padding: 10,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: 'black',
     borderRadius: 5,
     width: 200,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    height: 50,
   },
   bg: {
     flex: 1,
@@ -162,15 +165,17 @@ const styles = StyleSheet.create({
   searchInput: {
     padding: 10,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#8D8D8D',
     borderRadius: 5,
     marginBottom: 10,
+    color: 'black',
   },
   title: {
     fontSize: 18,
     fontWeight: '600',
     marginBottom: 12,
     marginTop: 5,
+    color: 'black',
   },
   item: {
     padding: 10,
@@ -180,25 +185,28 @@ const styles = StyleSheet.create({
   flagIcon: {
     height: 30,
     width: 30,
+    marginRight: 12,
   },
   itemText: {
     fontSize: 16,
-    marginLeft: 12,
+    color: 'black',
   },
   currencyName: {
     fontSize: 14,
     marginLeft: 12,
+    color: 'black',
   },
   selectedItem: {
     flexDirection: 'row',
     alignItems: 'center',
+    color: 'black',
   },
   selectedRow: {
     backgroundColor: '#ADD8E6',
   },
   downArrow: {
-    width: 10,
-    height: 10,
+    width: 12,
+    height: 12,
   },
 });
 
