@@ -39,3 +39,8 @@ npm run ios
 # OR using Yarn
 yarn ios
 ```
+
+Working demo:
+
+https://github.com/Prernabudh/CurrencyConverter/assets/48886463/074d10e3-f19f-40c5-b8d3-0081d00d3f6d
+
